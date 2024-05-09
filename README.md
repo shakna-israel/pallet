@@ -17,7 +17,7 @@ A stack-oriented programming interpreter.
 
 The famous 'Hello, World!' program is a simple program that can output a message to the screen.
 
-In pallet, it is as simple as you might expect:
+In *pallet*, it is as simple as you might expect:
 
 	print! 'Hello, World!'
 
@@ -29,7 +29,7 @@ To break it down further, you push a string with your message to the stack, push
 
 	call!
 
-In pallet, each line of a program is parsed from right-to-left, rather than the other way around. This is mostly because it's a stack-oriented language, but we still want it easily readable.
+In *pallet*, each line of a program is parsed from right-to-left, rather than the other way around. This is mostly because it's a stack-oriented language, but we still want it easily readable.
 
 To give another example:
 
@@ -51,7 +51,7 @@ Every item that isn't a call is pushed to the top of a list that we refer to as 
 
 ## Introduction
 
-pallet is a highly flexible stack-oriented programming language.
+*pallet* is a highly flexible stack-oriented programming language.
 
 	print! "Hello, World!"
 
@@ -75,7 +75,7 @@ This little bit of code should feel mostly familiar. It feels a lot like many pr
 
 First, `if` is actually an ordinary function call. It is not a keyword or an inbuilt language construct. Which means it can be safely removed, if you feel the need. Or replaced, etc.
 
-Secondly, the bracketed sections are a type of list called a `block` by pallet. They're not statements. They're an ordinary list, which could be replaced by a variable reference - allowing you to manipulate the sections as you need.
+Secondly, the bracketed sections are a type of list called a `block` by *pallet*. They're not statements. They're an ordinary list, which could be replaced by a variable reference - allowing you to manipulate the sections as you need.
 
 Thirdly, `else` is a `symbol` type. It is not a keyword. The `if` function checks the stack for it, which means you can conditionally generate an `else` if you want one.
 
@@ -99,7 +99,7 @@ This little bit of code is exactly identical to the one from before. The only di
 
 ## Variables
 
-Strictly speaking, variables don't exactly exist in pallet.
+Strictly speaking, variables don't exactly exist in *pallet*.
 
 Rather, when you use the `assign` function from the Standard Library, it generates a function that copies a value onto the `stack` when called.
 

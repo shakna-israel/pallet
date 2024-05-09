@@ -749,7 +749,7 @@ def manual(section=None):
 	section_data = {}
 
 	section_data['introduction'] = '\n\n'.join([
-		"pallet is a highly flexible stack-oriented programming language.",
+		"*pallet* is a highly flexible stack-oriented programming language.",
 		"\tprint! \"Hello, World!\"",
 		"The language is intended to be easily readable, easy for beginner programmers to learn, whilst simultaneously possessing fantastic metaprogramming abilities.",
 		"Metaprogramming is something that tends to be reserved for either highly complicated languages, or for extremely complex interfaces. Yet, it is something a programmer may still find themself reaching for the moment they go off the beaten track.",
@@ -761,7 +761,7 @@ def manual(section=None):
 		"\t}",
 		"This little bit of code should feel mostly familiar. It feels a lot like many programming languages out there. However, the exact construction of this statement is actually wildly different.",
 		"First, `if` is actually an ordinary function call. It is not a keyword or an inbuilt language construct. Which means it can be safely removed, if you feel the need. Or replaced, etc.",
-		"Secondly, the bracketed sections are a type of list called a `block` by pallet. They're not statements. They're an ordinary list, which could be replaced by a variable reference - allowing you to manipulate the sections as you need.",
+		"Secondly, the bracketed sections are a type of list called a `block` by *pallet*. They're not statements. They're an ordinary list, which could be replaced by a variable reference - allowing you to manipulate the sections as you need.",
 		"Thirdly, `else` is a `symbol` type. It is not a keyword. The `if` function checks the stack for it, which means you can conditionally generate an `else` if you want one.",
 		"In short, everything you see above can be generated at runtime. Everything can be manipulated.",
 		"\t= cond (equal? a b)",
@@ -775,13 +775,13 @@ def manual(section=None):
 
 	section_data['hello world'] = '\n\n'.join([
 		"The famous 'Hello, World!' program is a simple program that can output a message to the screen.",
-		"In pallet, it is as simple as you might expect:",
+		"In *pallet*, it is as simple as you might expect:",
 		"\tprint! 'Hello, World!'",
 		"To break it down further, you push a string with your message to the stack, push the print symbol to the stack, and then call it from the environment:",
 		"\t'Hello, World!'",
 		"\tprint",
 		"\tcall!",
-		"In pallet, each line of a program is parsed from right-to-left, rather than the other way around. This is mostly because it's a stack-oriented language, but we still want it easily readable.",
+		"In *pallet*, each line of a program is parsed from right-to-left, rather than the other way around. This is mostly because it's a stack-oriented language, but we still want it easily readable.",
 		"To give another example:",
 		"\tadd! 1 3",
 		"This little program runs in this order:",
@@ -793,7 +793,7 @@ def manual(section=None):
 	])
 
 	section_data['variables'] = '\n\n'.join([
-		"Strictly speaking, variables don't exactly exist in pallet.",
+		"Strictly speaking, variables don't exactly exist in *pallet*.",
 		"Rather, when you use the `assign` function from the Standard Library, it generates a function that copies a value onto the `stack` when called.",
 		"The `get` call simply runs that function, and if nothing was output, puts a `null` onto the stack instead.",
 		"Thus, these two lines are very similar:",
