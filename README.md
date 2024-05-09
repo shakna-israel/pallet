@@ -4,7 +4,16 @@ A stack-oriented programming interpreter.
 
 ---
 
-# pallet | Hello World
+* [Hello World](#hello-world)
+
+* [Introduction](#introduction)
+
+* [Variables](#variables)
+
+
+---
+
+## Hello World
 
 The famous 'Hello, World!' program is a simple program that can output a message to the screen.
 
@@ -40,7 +49,7 @@ Every item that isn't a call is pushed to the top of a list that we refer to as 
 
 ---
 
-# pallet | Introduction
+## Introduction
 
 pallet is a highly flexible stack-oriented programming language.
 
@@ -88,7 +97,7 @@ This little bit of code is exactly identical to the one from before. The only di
 
 ---
 
-# pallet | Variables
+## Variables
 
 Strictly speaking, variables don't exactly exist in pallet.
 

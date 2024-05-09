@@ -844,7 +844,14 @@ def manual(section=None):
 		print('---')
 		print()
 		for section in toc:
-			print("# pallet | " + section.title())
+			print("* [{}](#{})".format(section.title(), "{}".format(section.lower().replace(" ", "-"))))
+			print()
+		print()
+		print("---")
+		print()
+
+		for section in toc:
+			print("## " + section.title())
 			print()
 			print(section_data[section.lower().strip()])
 			print()
