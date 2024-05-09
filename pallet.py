@@ -838,6 +838,7 @@ def manual(section=None):
 		print(section_data[section.lower().strip()])
 	else:
 		print("# pallet")
+		print()
 		print('A stack-oriented programming interpreter.')
 		print()
 		print('---')
